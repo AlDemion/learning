@@ -56,7 +56,7 @@ def verify_init(game_type):
 
 def game(game_pool, choices_count):
     winning_pool = []
-    while len(winning_pool) <= choices_count:
+    while len(winning_pool) < choices_count:
         rand = random.choice(game_pool)
         if rand not in winning_pool:
             winning_pool.append(rand)
