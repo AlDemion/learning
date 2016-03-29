@@ -25,7 +25,9 @@ def verify_user_choice(game_pool, choice, choices_count, selection, user_choice)
 
     except (TypeError, ValueError):
         selection = raw_input("Wrong selection. Please choose \"" + str(choice) + "\" number again: ")
+        selection = int(selection)
         verify_user_choice(game_pool, choice, choices_count, selection, user_choice)
+
     finally:
         return selection
 
@@ -60,7 +62,7 @@ def game(game_pool, choices_count):
         rand = random.choice(game_pool)
         if rand not in winning_pool:
             winning_pool.append(rand)
-        
+
     return winning_pool
 
 
@@ -87,3 +89,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
