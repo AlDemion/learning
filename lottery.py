@@ -81,10 +81,10 @@ def main():
             match_pool.append(i)
 
     print "\nOk. Game is finished."
-    print "Your selection was: " + str(user_choice)
-    print "Winning numbers is: " + str(winning_pool)
-    print "Matching numbers is: " + str(match_pool)
-    print "You guess " + str(len(match_pool)) + " numbers."
+    print "Your selection was: " + str(user_choice.sort())
+    print "Winning numbers is: " + str(winning_pool.sort())
+    print "Matching numbers is: " + str(match_pool.sort())
+    print "You guess " + str(len(match_pool)) + " number(s)."
     print "Thanks for playing. Bye."
 
 if __name__ == "__main__":
