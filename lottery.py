@@ -45,7 +45,7 @@ def verify_init(game_type):
                 choices_count = 6
                 return game_pool, choices_count
             elif game_type == 3:
-                game_pool = range(1, 48)
+                game_pool = range(1, 49)
                 choices_count = 7
                 return game_pool, choices_count
         else:
